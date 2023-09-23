@@ -8,11 +8,9 @@ from app.external_dependencies.cart_storage import get_storage
 from app.use_cases.cart import add_item_to_cart
 from app.entities.product import ProductLine
 from datadome_module.main import check_http_traffic
+import os
 
-from app.config import get_configs
-
-settings = get_configs()
-session_key = settings.get("sessions-keys", "session_secret_key")
+session_key = os.environ.get('SESSION_KEY','session_access_key')
 
 
 app = FastAPI()

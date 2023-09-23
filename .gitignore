@@ -4,4 +4,4 @@ __pycache__
 .pytest_cache
 *.ini
 build
-.git
+dist
