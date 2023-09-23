@@ -11,8 +11,7 @@ fastapi = {extras = ["all"], version = "^0.103.1"}
 httpx = "^0.25.0"
 requests = "^2.31.0"
 uvicorn = {extras = ["standard"], version = "^0.23.2"}
-
-
+datadome_module = { path='../datadome_module'}
 
 [tool.poetry.group.dev.dependencies]
 pytest-html = "^4.0.2"
