@@ -1,0 +1,41 @@
+[tool.poetry]
+name = "app"
+version = "0.1.0"
+description = ""
+authors = ["Ange SOHONE <me@gnango.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = {extras = ["all"], version = "^0.103.1"}
+httpx = "^0.25.0"
+requests = "^2.31.0"
+uvicorn = {extras = ["standard"], version = "^0.23.2"}
+
+
+
+[tool.poetry.group.dev.dependencies]
+pytest-html = "^4.0.2"
+pytest-mypy = "^0.10.3"
+pytest-tap = "^3.4"
+ansi2html = "^1.8.0"
+flake8 = "^6.1.0"
+black = "^23.9.1"
+lxml = "^4.9.3"
+pytest-cov = "^4.1.0"
+responses = "^0.23.3"
+types-requests = "^2.31.0.3"
+
+[tool.black]
+line-length = 80
+
+[tool.mypy]
+exclude = [
+    "^one\\.py$",  # TOML's double-quoted strings require escaping backslashes
+    'two\.pyi$',  # but TOML's single-quoted strings do not
+    '^three\.',
+]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
