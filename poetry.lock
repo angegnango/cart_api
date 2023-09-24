@@ -305,7 +305,7 @@ develop = false
 type = "git"
 url = "https://github.com/angegnango/datadome_module.git"
 reference = "HEAD"
-resolved_reference = "bfb1c79b5b36b2175c3c6164c3f3f106d28af8b7"
+resolved_reference = "5e58daf0a5ab883e426b83c11a458ddcfaa6e8dc"
 
 [[package]]
 name = "dnspython"

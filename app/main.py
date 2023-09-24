@@ -10,7 +10,7 @@ from app.entities.product import ProductLine
 from datadome_module.main import check_http_traffic
 import os
 
-session_key = os.environ.get('SESSION_KEY','session_access_key')
+session_key = os.environ.get("SESSION_KEY", "session_access_key")
 
 
 app = FastAPI()
